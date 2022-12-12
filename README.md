@@ -1,4 +1,4 @@
-# vueproj
+# My Book library
 
 > A Vue.js project
 
