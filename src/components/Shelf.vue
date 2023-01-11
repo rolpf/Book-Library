@@ -3,7 +3,7 @@
 
     Number of liked books : {{count}}
     
-    <span v-for="book in books">
+    <span v-for="book in books" :key="book.item">
       <Book :book="book" @minus="count--" @plus="count++"/>
     </span>
   </div>
@@ -26,7 +26,8 @@ export default {
       {title: 'The Jungle Book', author: 'Rudyard Kipling', pages: 300, date: '1894', liked: false},
       {title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', pages: 500, date: '1954', liked: false},
       {title: '1984', author: 'George Orwell', pages: 200, date: '1949', liked: false},
-      {title: 'The Hobbit', author: 'J.R.R. Tolkien', pages: 300, date: '1937', liked: false}
+      {title: 'The Hobbit', author: 'J.R.R. Tolkien', pages: 300, date: '1937', liked: false},
+      {title: 'Pride and Prejudice', author: 'Jane Austen', pages: 200, date: '1813', liked: false}
     ],
     count: 0,
     }

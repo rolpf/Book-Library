@@ -1,12 +1,19 @@
 <template>
   <div id="app">
+
+    
     <h1>My bookshelf</h1>
-      <Shelf/>
+    <div class="search-wrapper">
+    <input type="text" v-model="search" v-on:input="search"/>
+    <Shelf/>
+    </div>
   </div>
 </template>
 
 <script>
+
 import Shelf from './components/Shelf';
+
 
 export default {
   name: 'App',
